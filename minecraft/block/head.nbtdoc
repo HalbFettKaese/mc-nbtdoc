@@ -1,4 +1,4 @@
-use ::minecraft::util::SkullOwner
+use ::minecraft::util::SkullOwner;
 
 compound PlayerHead extends super::BlockEntity {
 	/// The owner of the skull
