@@ -1,4 +1,4 @@
-use ::minecraft::util::SkullOwner
+use ::minecraft::util::SkullOwner;
 
 compound PlayerHead extends super::ItemBase {
 	/// The skull owner
