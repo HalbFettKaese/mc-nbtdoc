@@ -83,10 +83,6 @@ enum(byte) IconId {
 
 /// The display settings of an item
 compound Display {
-	/// The name of an item, as a JSON text component
-	Name: string,
-	/// The lore of an item, with each element being a lore line
-	Lore: [string],
 	/// The color of the map  
 	/// calculated as `RED << 16 | GREEN << 8 | BLUE`. Each of these fields must be between 0 and 255, inclusive
 	MapColor: int
