@@ -1,6 +1,9 @@
 /// A single potion effect
-compound PotionEffect {
-	Id: EffectId,
+compound PotionEffect extends BaseEffect {
+	Id: EffectId
+}
+
+compound BaseEffect {
 	Amplifier: byte,
 	Duration: int @ 1..,
 	/// Whether the effect particles are semi-transparent (like with a Beacon)
@@ -8,7 +11,9 @@ compound PotionEffect {
 	/// Whether the effect particles should be shown
 	ShowParticles: boolean,
 	/// Whether the effect icon should be shown
-	ShowIcon: boolean
+	ShowIcon: boolean,
+	/// The effect hidden behind this effect
+	HiddenEffect: BaseEffect
 }
 
 /// Numerical ids for effects
