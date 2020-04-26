@@ -5,6 +5,7 @@ mod color;
 mod bannerpattern;
 mod invitem;
 mod blockstate;
+mod playerhead;
 
 export use slot::Slot;
 export use effect::PotionEffect;
@@ -14,3 +15,4 @@ export use bannerpattern::BannerPattern;
 export use invitem::InventoryItem;
 export use invitem::SlottedItem;
 export use blockstate::BlockState;
+export use playerhead::SkullOwner;
